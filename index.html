@@ -11,73 +11,76 @@
 </head>
 
 <body>
-  <h1>SPLI<span>TTER</span></h1>
   <main class="container">
-    <section>
-      <div class="bill">
-        <h2>Bill</h2>
-        <div>
-          <img src="./images/icon-dollar.svg" alt="">
-          <label for="bill" hidden="true">bill</label>
-          <input type="number" name="bill" id="bill" placeholder="0" min="1">
+    <h1>SPLI<span>TTER</span></h1>
+    <div>
+      <section>
+        <div class="bill">
+          <h2>Bill</h2>
+          <div>
+            <img src="./images/icon-dollar.svg" alt="">
+            <label for="bill" hidden="true">bill</label>
+            <input type="number" name="bill" id="bill" placeholder="0" min="1">
+          </div>
         </div>
-      </div>
 
-      <div class="tip">
-        <h2>Select Tip %</h2>
-        <div class="radio">
-          <div class="item">
-            <input type="radio" name="tip" id="five">
-            <label for="five">5%</label>
-          </div>
-          <div class="item">
-            <input type="radio" name="tip" id="ten">
-            <label for="ten">10%</label>
-          </div>
-          <div class="item">
-            <input type="radio" name="tip" id="fifteen">
-            <label for="fifteen">15%</label>
-          </div>
-          <div class="item">
-            <input type="radio" name="tip" id="twentyfive">
-            <label for="twentyfive">25%</label>
-          </div>
-          <div class="item">
-            <input type="radio" name="tip" id="fifty">
-            <label for="fifty">50%</label>
-          </div>
-          <div class="item">
-            <input type="text" name="tip" id="custom" placeholder="Custom">
-            <label for="custom" hidden="true">custom</label>
+        <div class="tip">
+          <h2>Select Tip %</h2>
+          <div class="radio">
+            <div class="item">
+              <input type="radio" name="tip" id="five">
+              <label for="five">5%</label>
+            </div>
+            <div class="item">
+              <input type="radio" name="tip" id="ten">
+              <label for="ten">10%</label>
+            </div>
+            <div class="item">
+              <input type="radio" name="tip" id="fifteen">
+              <label for="fifteen">15%</label>
+            </div>
+            <div class="item">
+              <input type="radio" name="tip" id="twentyfive">
+              <label for="twentyfive">25%</label>
+            </div>
+            <div class="item">
+              <input type="radio" name="tip" id="fifty">
+              <label for="fifty">50%</label>
+            </div>
+            <div class="item">
+              <input type="text" name="tip" id="custom" placeholder="Custom">
+              <label for="custom" hidden="true">custom</label>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="people">
-        <h2>Number of People</h2>
-        <div>
-          <img src="./images/icon-person.svg" alt="">
-          <label for="people" hidden="true">people</label>
-          <input type="number" name="people" id="people" placeholder="0" min="1">
+        <div class="people">
+          <h2>Number of People</h2>
+          <div>
+            <img src="./images/icon-person.svg" alt="">
+            <label for="people" hidden="true">people</label>
+            <input type="number" name="people" id="people" placeholder="0" min="1">
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="price">
-        <div class="amount">
-          <p class="amount_person">Tip Amount<span class="person">/ person</span></p>
-          <p class="tip__amount currency">$0.00</p>
+      <section>
+        <div class="price">
+          <div class="amount">
+            <p class="amount_person">Tip Amount<span class="person">/ person</span></p>
+            <p class="tip__amount currency">$0.00</p>
+          </div>
+          <div class="total">
+            <p class="total_person">Total<span class="person">/ person</span></p>
+            <p class="total__person currency">$0.00</p>
+          </div>
         </div>
-        <div class="total">
-          <p class="total_person">Total<span class="person">/ person</span></p>
-          <p class="total__person currency">$0.00</p>
+        <div class="reset">
+          <button type="reset">Reset</button>
         </div>
-      </div>
-      <div class="reset">
-        <button type="reset">Reset</button>
-      </div>
-    </section>
+      </section>
+    </div>
+
   </main>
 </body>
 
