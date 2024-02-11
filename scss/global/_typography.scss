@@ -1,0 +1,33 @@
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(1.125rem, 0.9929577464788732rem + 0.5633802816901408vw, 1.5rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+input[type="number"] {
+  font-size: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+}
+
+input[type="text"] {
+  font-size: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+}
+
+.amount_person,
+.total_person {
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+person {
+  font-size: clamp(0.8125rem, 0.8125rem + 0vw, 0.8125rem);
+}
+
+.currency {
+  font-size: clamp(2rem, 1.647887323943662rem + 1.5023474178403755vw, 3rem);
+}

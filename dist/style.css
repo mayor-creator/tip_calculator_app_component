@@ -64,4 +64,37 @@ h6 {
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/space-mono-v13-latin-700.woff2") format("woff2");
+}
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(1.125rem, 0.9929577465rem + 0.5633802817vw, 1.5rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+input[type=number] {
+  font-size: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+}
+
+input[type=text] {
+  font-size: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+}
+
+.amount_person,
+.total_person {
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+person {
+  font-size: clamp(0.8125rem, 0.8125rem + 0vw, 0.8125rem);
+}
+
+.currency {
+  font-size: clamp(2rem, 1.6478873239rem + 1.5023474178vw, 3rem);
 }/*# sourceMappingURL=style.css.map */
