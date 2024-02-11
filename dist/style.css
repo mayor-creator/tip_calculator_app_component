@@ -56,4 +56,12 @@ h6 {
   --color-lightGrayishCyan: hsl(185, 41%, 84%);
   --color-veryLightGrayishCyan: hsl(189, 41%, 97%);
   --color-white: hsl(0, 0%, 100%) ;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v13-latin-700.woff2") format("woff2");
 }/*# sourceMappingURL=style.css.map */
