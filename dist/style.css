@@ -97,4 +97,13 @@ person {
 
 .currency {
   font-size: clamp(2rem, 1.6478873239rem + 1.5023474178vw, 3rem);
+}
+
+body {
+  background-color: var(--color-strongCyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */
