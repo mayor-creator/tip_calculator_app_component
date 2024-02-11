@@ -47,4 +47,13 @@ h6 {
 .container {
   width: min(100% - 32px, 30.063rem);
   margin-inline: auto;
+}
+
+:root {
+  --color-strongCyan: hsl(172, 67%, 45%);
+  --color-varyDarkCyan: hsl(183, 100%, 15%);
+  --color-grayishCyan: hsl(184, 14%, 56%);
+  --color-lightGrayishCyan: hsl(185, 41%, 84%);
+  --color-veryLightGrayishCyan: hsl(189, 41%, 97%);
+  --color-white: hsl(0, 0%, 100%) ;
 }/*# sourceMappingURL=style.css.map */
