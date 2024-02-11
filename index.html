@@ -5,32 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 
 <body>
+  <h1>SPLI<span>TTER</span></h1>
+  <main class="container">
+    <section>
+      <div class="bill">
+        <h2>Bill</h2>
+        <div>
+          <img src="./images/icon-dollar.svg" alt="">
+          <label for="bill" hidden="true">bill</label>
+          <input type="number" name="bill" id="bill" placeholder="0" min="1">
+        </div>
+      </div>
 
-  Bill
+      <div class="tip">
+        <h2>Select Tip %</h2>
+        <div class="radio">
+          <div class="item">
+            <input type="radio" name="tip" id="five">
+            <label for="five">5%</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="tip" id="ten">
+            <label for="ten">10%</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="tip" id="fifteen">
+            <label for="fifteen">15%</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="tip" id="twentyfive">
+            <label for="twentyfive">25%</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="tip" id="fifty">
+            <label for="fifty">50%</label>
+          </div>
+          <div class="item">
+            <input type="text" name="tip" id="custom" placeholder="Custom">
+            <label for="custom" hidden="true">custom</label>
+          </div>
+        </div>
+      </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <div class="people">
+        <h2>Number of People</h2>
+        <div>
+          <img src="./images/icon-person.svg" alt="">
+          <label for="people" hidden="true">people</label>
+          <input type="number" name="people" id="people" placeholder="0" min="1">
+        </div>
+      </div>
+    </section>
 
-  Number of People
+    <section>
+      <div class="amount">
+        <p>Tip Amount<span>/ person</span></p>
+        <p class="tip__amount">$0.00</p>
+      </div>
 
-  Tip Amount
-  / person
+      <div class="total">
+        <p>Total<span>/ person</span></p>
+        <p class="total__person">$0.00</p>
+      </div>
 
-  Total
-  / person
-
-  Reset
+      <div class="reset">
+        <button type="reset">Reset</button>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
