@@ -45,7 +45,6 @@ h6 {
 }
 
 .container {
-  width: min(100% - 32px, 30.063rem);
   margin-inline: auto;
 }
 
@@ -106,4 +105,45 @@ body {
   justify-content: center;
   gap: 1.5rem;
   min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type=number] {
+  border: 0;
+  width: 100%;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  text-align: right;
+}
+
+.container {
+  background-color: var(--color-white);
+  border-radius: 0.625rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+#bill {
+  background: url("../../images/icon-dollar.svg") left no-repeat;
+  background-color: var(--color-veryLightGrayishCyan);
+}
+
+#people {
+  background: url("../../images/icon-person.svg") left no-repeat;
+  background-color: var(--color-veryLightGrayishCyan);
+}
+
+.right__card {
+  background-color: var(--color-varyDarkCyan);
+  border-radius: 0.625rem;
 }/*# sourceMappingURL=style.css.map */
