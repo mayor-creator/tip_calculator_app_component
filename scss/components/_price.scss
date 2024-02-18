@@ -1,0 +1,21 @@
+.amount,
+.total {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  gap: 0.0625rem;
+}
+
+.currency {
+  color: #26c2AE;
+}
+
+.amount_person,
+.total_person {
+  color: var(--color-white);
+  padding-right: 120px;
+}
+
+.person {
+  color: #7f9d9f;
+}
