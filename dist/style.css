@@ -107,8 +107,8 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  text-align: center;
+h2 {
+  color: #5e7a7d;
 }
 
 input[type=number] {
@@ -119,6 +119,7 @@ input[type=number] {
   appearance: textfield;
   text-align: right;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .container {
@@ -142,11 +143,6 @@ input[type=number] {
 #people {
   background: url("../../images/icon-person.svg") left no-repeat;
   background-color: var(--color-veryLightGrayishCyan);
-}
-
-.right__card {
-  background-color: var(--color-varyDarkCyan);
-  border-radius: 0.625rem;
 }
 
 /* radio buttons styling */
@@ -188,5 +184,26 @@ input[type=text] {
 
 .radio__input:checked + .radio__label {
   background-color: var(--color-strongCyan);
-  color: var(--color-varyDarkCyan);
+  background-color: var(--color-strongCyan);
+}
+
+.bill,
+.tip {
+  padding-bottom: 0.625rem;
+}
+
+/* style section for inner card */
+.right__card {
+  background-color: var(--color-varyDarkCyan);
+  border-radius: 0.625rem;
+  width: 413px;
+}
+
+button {
+  width: 333px;
+  height: 48px;
+  border: 0;
+  background-color: var(--color-strongCyan);
+  background-color: var(--color-strongCyan);
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
