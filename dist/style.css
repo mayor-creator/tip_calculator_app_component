@@ -118,6 +118,7 @@ input[type=number] {
   -moz-appearance: textfield;
   appearance: textfield;
   text-align: right;
+  border-radius: 0.5rem;
 }
 
 .container {
@@ -146,4 +147,46 @@ input[type=number] {
 .right__card {
   background-color: var(--color-varyDarkCyan);
   border-radius: 0.625rem;
+}
+
+/* radio buttons styling */
+.radio__input {
+  display: none;
+}
+
+input[type=text] {
+  border: none;
+  background-color: var(--color-veryLightGrayishCyan);
+  border-radius: 0.5rem;
+  width: 7.313rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  width: 23.75rem;
+}
+
+.item {
+  width: 7.375rem;
+  text-align: center;
+}
+
+.radio__label {
+  background-color: var(--color-varyDarkCyan);
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  cursor: pointer;
+  width: 7.313rem;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+.radio__input:checked + .radio__label {
+  background-color: var(--color-strongCyan);
+  color: var(--color-varyDarkCyan);
 }/*# sourceMappingURL=style.css.map */
