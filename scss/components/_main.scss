@@ -64,7 +64,7 @@ input[type="text"] {
 }
 
 .radio__label {
-  background-color: var(--color-varyDarkCyan);
+  background-color: var(--color-veryDarkCyan);
   border-radius: 0.5rem;
   color: var(--color-white);
   cursor: pointer;
@@ -75,7 +75,7 @@ input[type="text"] {
 
 .radio__input:checked+.radio__label {
   background-color: var(--color-strongCyan);
-  background-color: var(--color-strongCyan);
+  color: var(--color-veryDarkCyan);
 }
 
 .bill,
@@ -85,16 +85,27 @@ input[type="text"] {
 
 /* style section for inner card */
 .right__card {
-  background-color: var(--color-varyDarkCyan);
+  background-color: var(--color-veryDarkCyan);
   border-radius: 0.625rem;
-  width: 413px;
+  width: min(100% - 2rem, 25.813rem);
+  margin-inline: auto;
+  padding: 1.25rem;
 }
 
 button {
-  width: 333px;
-  height: 48px;
+  width: 20.813rem;
+  height: 2.375rem;
   border: 0;
   background-color: var(--color-strongCyan);
-  background-color: var(--color-strongCyan);
   border-radius: 0.5rem;
+  color: var(--color-veryDarkCyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9FE8DF;
+  color: var(--color-veryDarkCyan);
 }
