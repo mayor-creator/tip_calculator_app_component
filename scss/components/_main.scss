@@ -93,8 +93,6 @@ input[type="text"] {
 }
 
 button {
-  width: 20.813rem;
-  height: 2.375rem;
   border: 0;
   background-color: var(--color-strongCyan);
   border-radius: 0.5rem;
@@ -103,6 +101,9 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  height: 2.375rem;
+  width: 100%;
+  min-width: 3.125rem;
 }
 
 button:hover {
