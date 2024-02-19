@@ -13,9 +13,14 @@
 .amount_person,
 .total_person {
   color: var(--color-white);
-  padding-right: 120px;
+  padding-right: 7.5rem
 }
 
 .person {
   color: #7f9d9f;
+  display: inline-block;
+}
+
+.reset {
+  padding-top: 7.5rem;
 }

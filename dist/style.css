@@ -189,7 +189,7 @@ input[type=text] {
 
 .bill,
 .tip {
-  padding-bottom: 0.625rem;
+  padding-bottom: 2.5rem;
 }
 
 /* style section for inner card */
@@ -202,8 +202,6 @@ input[type=text] {
 }
 
 button {
-  width: 20.813rem;
-  height: 2.375rem;
   border: 0;
   background-color: var(--color-strongCyan);
   border-radius: 0.5rem;
@@ -212,6 +210,9 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  height: 2.375rem;
+  width: 100%;
+  min-width: 3.125rem;
 }
 
 button:hover {
@@ -234,9 +235,14 @@ button:hover {
 .amount_person,
 .total_person {
   color: var(--color-white);
-  padding-right: 120px;
+  padding-right: 7.5rem;
 }
 
 .person {
   color: #7f9d9f;
+  display: inline-block;
+}
+
+.reset {
+  padding-top: 7.5rem;
 }/*# sourceMappingURL=style.css.map */
