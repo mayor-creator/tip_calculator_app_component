@@ -17,7 +17,12 @@ input[type="number"] {
 
 .container {
   background-color: var(--color-white);
-  border-radius: 0.625rem;
+  border-radius: 1.25rem;
+
+  @include l.mobile {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+  }
 }
 
 .card {
