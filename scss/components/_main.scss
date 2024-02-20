@@ -1,3 +1,5 @@
+@use "../global/layout" as l;
+
 h2 {
   color: #5e7a7d;
 }
@@ -24,6 +26,10 @@ input[type="number"] {
   justify-content: center;
   gap: 1.5rem;
   padding: 1.5rem;
+
+  @include l.mobile {
+    flex-direction: column;
+  }
 }
 
 #bill {
@@ -56,11 +62,10 @@ input[type="text"] {
   gap: 0.625rem;
   flex-wrap: wrap;
   width: 23.75rem;
-}
 
-.item {
-  width: 7.375rem;
-  text-align: center;
+  @include l.mobile {
+    width: 100%;
+  }
 }
 
 .radio__label {
@@ -71,6 +76,10 @@ input[type="text"] {
   width: 7.313rem;
   text-align: center;
   padding: 0.625rem;
+
+  @include l.mobile {
+    flex-grow: 1;
+  }
 }
 
 .radio__input:checked+.radio__label {
@@ -78,12 +87,29 @@ input[type="text"] {
   color: var(--color-veryDarkCyan);
 }
 
+/* mobile style for custom textfield */
+#custom {
+  @include l.mobile {
+    flex-grow: 1;
+  }
+}
+
+/* left_card items */
 .bill,
 .tip {
   padding-bottom: 2.5rem;
+
+  @include l.mobile {
+    padding-bottom: 1.25rem;
+  }
 }
 
-/* style section for inner card */
+/* left card width */
+.left__card {
+  width: min(100% - 2rem, 25.813rem);
+}
+
+/*inner section card */
 .right__card {
   background-color: var(--color-veryDarkCyan);
   border-radius: 0.625rem;
@@ -92,6 +118,7 @@ input[type="text"] {
   padding: 1.25rem;
 }
 
+/* reset button */
 button {
   border: 0;
   background-color: var(--color-strongCyan);
