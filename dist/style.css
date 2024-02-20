@@ -124,7 +124,14 @@ input[type=number] {
 
 .container {
   background-color: var(--color-white);
-  border-radius: 0.625rem;
+  border-radius: 1.25rem;
+}
+@media (max-width: 30em) {
+  .container {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    margin-top: auto;
+  }
 }
 
 .card {
@@ -267,12 +274,33 @@ button:hover {
   color: var(--color-white);
   padding-right: 7.5rem;
 }
+@media (max-width: 30em) {
+  .amount_person,
+  .total_person {
+    padding-right: 0rem;
+    flex-grow: 4;
+  }
+}
+
+.amount {
+  padding-bottom: 1.25rem;
+}
 
 .person {
   color: #7f9d9f;
   display: inline-block;
 }
+@media (max-width: 30em) {
+  .person {
+    padding-right: 2.5rem;
+  }
+}
 
 .reset {
   padding-top: 7.5rem;
+}
+@media (max-width: 30em) {
+  .reset {
+    padding-top: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
