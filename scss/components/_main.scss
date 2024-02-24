@@ -2,6 +2,7 @@
 
 h2 {
   color: #5e7a7d;
+  display: inline-block;
 }
 
 input[type="number"] {
@@ -142,4 +143,9 @@ button {
 button:hover {
   background-color: #9FE8DF;
   color: var(--color-veryDarkCyan);
+}
+
+// error message
+.error__message {
+  display: none;
 }
