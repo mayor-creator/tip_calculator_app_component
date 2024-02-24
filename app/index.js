@@ -1,6 +1,8 @@
 let bill = document.getElementById("bill").value;
 let people = document.getElementById("people").value;
 let selectTip = document.querySelectorAll('input[name="tip"]');
+let costButton = document.querySelector(".cost__button");
+let resetButton = document.querySelector(".reset__button");
 
 const tipCalculator = () => {
 	//converting bill, people and tip values to floating point
@@ -30,3 +32,19 @@ const tipCalculator = () => {
 	let totalPerson = document.querySelector(".total__person");
 	totalPerson.innerHTML = `$${totalPerPerson}`;
 };
+
+const resetCalculation = () => {
+	// let resetBill = document.getElementById("bill").value;
+	// resetBill = `${placeholder}`;
+	// let resetPeople = document.getElementById("people").value;
+	// resetPeople = `${placeholder}`;
+
+	let resetTipAmount = document.querySelector(".tip__amount");
+	let innerValue = "$0.00";
+	resetTipAmount.innerHTML = `${innerValue}`;
+	let resetTotalPeople = document.querySelector(".total__person");
+	resetTotalPeople.innerHTML = `${innerValue}`;
+};
+
+costButton.addEventListener("click", tipCalculator);
+resetButton.addEventListener("click", resetCalculation);
