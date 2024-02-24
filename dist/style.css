@@ -109,6 +109,7 @@ body {
 
 h2 {
   color: #5e7a7d;
+  display: inline-block;
 }
 
 input[type=number] {
@@ -138,12 +139,12 @@ input[type=number] {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
   padding: 1.5rem;
 }
 @media (max-width: 30em) {
   .card {
     flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -225,14 +226,14 @@ input[type=text] {
 
 /* left card width */
 .left__card {
-  width: min(100% - 2rem, 25.813rem);
+  width: min(100% - 2rem, 23.688rem);
 }
 
 /*inner section card */
 .right__card {
   background-color: var(--color-veryDarkCyan);
   border-radius: 0.625rem;
-  width: min(100% - 2rem, 25.813rem);
+  width: min(100% - 2rem, 23.688rem);
   margin-inline: auto;
   padding: 1.25rem;
 }
@@ -257,6 +258,10 @@ button:hover {
   color: var(--color-veryDarkCyan);
 }
 
+.error__message {
+  display: none;
+}
+
 .amount,
 .total {
   align-items: center;
@@ -272,13 +277,13 @@ button:hover {
 .amount_person,
 .total_person {
   color: var(--color-white);
-  padding-right: 7.5rem;
+  padding-right: 3.125rem;
+  flex-grow: 1;
 }
 @media (max-width: 30em) {
   .amount_person,
   .total_person {
     padding-right: 0rem;
-    flex-grow: 4;
   }
 }
 

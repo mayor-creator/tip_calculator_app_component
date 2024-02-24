@@ -15,11 +15,11 @@
 .amount_person,
 .total_person {
   color: var(--color-white);
-  padding-right: 7.5rem;
+  padding-right: 3.125rem;
+  flex-grow: 1;
 
   @include l.mobile {
     padding-right: 0rem;
-    flex-grow: 4;
   }
 }
 
