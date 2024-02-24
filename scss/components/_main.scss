@@ -31,11 +31,11 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
   padding: 1.5rem;
 
   @include l.mobile {
     flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -113,14 +113,14 @@ input[type="text"] {
 
 /* left card width */
 .left__card {
-  width: min(100% - 2rem, 25.813rem);
+  width: min(100% - 2rem, 23.688rem);
 }
 
 /*inner section card */
 .right__card {
   background-color: var(--color-veryDarkCyan);
   border-radius: 0.625rem;
-  width: min(100% - 2rem, 25.813rem);
+  width: min(100% - 2rem, 23.688rem);
   margin-inline: auto;
   padding: 1.25rem;
 }
