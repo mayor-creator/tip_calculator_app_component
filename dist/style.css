@@ -45,6 +45,7 @@ h6 {
 }
 
 .container {
+  width: min(100% - 2rem, 57.5rem);
   margin-inline: auto;
 }
 
@@ -267,6 +268,7 @@ button:hover {
 
 .error__message {
   display: none;
+  color: #c21807;
 }
 
 .amount,
