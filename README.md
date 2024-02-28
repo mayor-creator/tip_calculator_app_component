@@ -28,12 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![tip calculator app mobile screenshot](./tipCalculatorAppMobile.png)
+![tip calculator app desktop screenshot](./tipCalculatorAppDesktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [tip calculator app solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-BZ-gddz2_K)
+- Live Site URL: [tip calculator app live site](https://your-live-site-url.com)
 
 ## My process
 
@@ -42,37 +43,55 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- JavaScript
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-	color: papayawhip;
-}
-```
-
 ```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
+const resetCalculation = () => {
+	//reset bill
+	let resetBill = document.getElementById("bill");
+	resetBill.value = "0";
+	resetBill.style.color = "#5e7a7d";
+	//reset number of people
+	let resetPeople = document.getElementById("people");
+	resetPeople.value = "0";
+	resetPeople.style.color = "#5e7a7d";
+
+	// reset custom textfield
+	let custom = document.getElementById("custom");
+	custom.value = "Custom";
+	resetBill.style.color = "#5e7a7d";
+
+	//reset tip amount and total
+	let innerValue = "$0.00";
+	let resetTipAmount = document.querySelector(".tip__amount");
+	resetTipAmount.innerHTML = `${innerValue}`;
+	let resetTotalPeople = document.querySelector(".total__person");
+	resetTotalPeople.innerHTML = `${innerValue}`;
+
+	// reset error message
+	document.querySelectorAll(".error__message")[0].style.display = "none";
+	document.querySelectorAll(".error__message")[1].style.display = "none";
+	document.getElementById("bill").style.border = "none";
+	document.getElementById("people").style.border = "none";
 };
 ```
 
 ### Continued development
 
+- how to implement custom tip field
+- JS fetch api
+- JS modules
+
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How to Convert a String to a Number in JavaScript](https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/) - This helped me to understand the different ways to convert string variable to a Number. I really liked the examples in this article and how sample it was to follow along.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@mayor-creator](https://www.frontendmentor.io/profile/mayor-creator)
+- Threads - [@mayor_creator](https://www.threads.net/@mayor_creator)
 
 ## Acknowledgments
