@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [tip calculator app solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-BZ-gddz2_K)
-- Live Site URL: [tip calculator app live site](https://your-live-site-url.com)
+- Live Site URL: [tip calculator app live site](https://tip-calculator-app-component.vercel.app/)
 
 ## My process
 
