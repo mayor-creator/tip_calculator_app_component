@@ -51,16 +51,16 @@ const tipCalculator = () => {
 const resetCalculation = () => {
 	//reset bill
 	let resetBill = document.getElementById("bill");
-	resetBill.value = "0";
+	resetBill.value = "";
 	resetBill.style.color = "#5e7a7d";
 	//reset number of people
 	let resetPeople = document.getElementById("people");
-	resetPeople.value = "0";
+	resetPeople.value = "";
 	resetPeople.style.color = "#5e7a7d";
 
 	// reset custom textfield
 	let custom = document.getElementById("custom");
-	custom.value = "Custom";
+	custom.value = "";
 	resetBill.style.color = "#5e7a7d";
 
 	//reset tip amount and total
@@ -75,6 +75,12 @@ const resetCalculation = () => {
 	document.querySelectorAll(".error__message")[1].style.display = "none";
 	document.getElementById("bill").style.border = "none";
 	document.getElementById("people").style.border = "none";
+
+	// reset radio buttons
+	let radioButtons = document.querySelectorAll('input[type="radio"]');
+	for (radio of radioButtons) {
+		radio.checked = false;
+	}
 };
 
 let costButton = document.querySelector(".cost__button");
